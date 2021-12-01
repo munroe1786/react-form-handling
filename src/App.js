@@ -10,7 +10,7 @@ function App() {
   const handleChange = e => {
     setState({
       ...state,
-      [e.target.value]: e.target.value,
+      [e.target.name]: e.target.value,
   })
 }
 
@@ -27,7 +27,8 @@ function App() {
         </label>{" "}
         <label>
           Last Name: {" "}
-          <input type="text" 
+          <input 
+            type="text" 
             name="lastName"
             value={state.lastName} 
             onChange={handleChange}/>
