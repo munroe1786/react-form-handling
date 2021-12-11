@@ -22,8 +22,9 @@ function App() {
           First Name: {" "}
           <input type="text" 
             name="firstName"
-            value={state.firstNamename} 
-            onChange={handleChange}/>
+            value={state.firstName} 
+            onChange={handleChange}
+          />
         </label>{" "}
         <label>
           Last Name: {" "}
@@ -31,7 +32,8 @@ function App() {
             type="text" 
             name="lastName"
             value={state.lastName} 
-            onChange={handleChange}/>
+            onChange={handleChange}
+          />
         </label>
       </form>
       <h5>
