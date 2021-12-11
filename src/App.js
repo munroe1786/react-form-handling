@@ -5,6 +5,7 @@ function App() {
   const [state, setState] = useState({
     firstName: "",
     lastName: "",
+    message: ""
   })
 
   const handleChange = e => {
@@ -19,26 +20,18 @@ function App() {
       <h1>React Form Handling</h1>
       <form>
         <label>
-          First Name: {" "}
-          <input type="text" 
-            name="firstName"
-            value={state.firstName} 
-            onChange={handleChange}
-          />
-        </label>{" "}
-        <label>
-          Last Name: {" "}
-          <input 
-            type="text" 
-            name="lastName"
-            value={state.lastName} 
+          Your Message:{" "}
+          <textarea
+            name="message"
+            value={state.message} 
             onChange={handleChange}
           />
         </label>
-      </form>
+        </form>
       <h5>
         Name: {state.firstName} {state.lastName} 
       </h5>
+      <p>Message: {state.message} </p>
     </div>
   );
 }
