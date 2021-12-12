@@ -5,7 +5,8 @@ function App() {
   const [state, setState] = useState({
     firstName: "",
     lastName: "",
-    message: ""
+    message: "",
+    favoriteArtist: ""
   })
 
   const handleChange = e => {
@@ -19,6 +20,7 @@ function App() {
     <div>
       <h1>React Form Handling</h1>
       <form>
+        <br />
         <label>
           Your Message:{" "}
           <textarea
@@ -26,6 +28,21 @@ function App() {
             value={state.message} 
             onChange={handleChange}
           />
+        </label>
+        <br /><br />
+        <label>
+          Pick your favorite artist:
+          <select
+            name="artist"
+            value={state.favoriteArtist}
+            onChange={handleChange}
+          >
+            <option value="mucha">Alphons Mucha</option>
+            <option value="okeefe">Georgia O'Keefe</option>
+            <option value="kahlo">Frida Kahlo</option>
+            <option value="dali">Salvador Dali</option>
+            <option value="cooper">J.A.W. Cooper</option>
+          </select>
         </label>
         </form>
       <h5>
