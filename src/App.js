@@ -22,6 +22,15 @@ function App() {
       <form>
         <br />
         <label>
+          First Name:{" "}
+          <input
+            type="text"
+            name="firstName"
+            value={state.firstName}
+            onChange={handleChange}
+          />
+        </label>{" "}
+        <label>
           Your Message:{" "}
           <textarea
             name="message"
