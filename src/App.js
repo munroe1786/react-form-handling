@@ -66,6 +66,7 @@ function App() {
       <h5>
         Name: {state.firstName} {state.lastName} 
       </h5>
+      <h5>My favorite artist: {state.favoriteArtist}</h5>
       <p>Message: {state.message} </p>
     </div>
   );
