@@ -6,7 +6,8 @@ function App() {
     firstName: "",
     lastName: "",
     message: "",
-    favoriteArtist: ""
+    favoriteArtist: "",
+    isChecked: false,
   })
 
   const handleChange = e => {
@@ -61,6 +62,17 @@ function App() {
             <option value="dali">Salvador Dali</option>
             <option value="cooper">J.A.W. Cooper</option>
           </select>
+        </label>
+        <br /><br />
+        <label>
+          <input 
+            type="checkbox"
+            name="isChecked"
+            checked={state.isChecked}
+            onChange={handleChange}
+          />
+          {" "}
+          Is Checked?
         </label>
         </form>
       <h5>
