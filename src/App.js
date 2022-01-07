@@ -80,6 +80,7 @@ function App() {
       </h5>
       <h5>My favorite artist: {state.favoriteArtist}</h5>
       <p>Message: {state.message} </p>
+      <h5>Is it checked? : {state.isChecked ? "Yes" : "No"}</h5>
     </div>
   );
 }
