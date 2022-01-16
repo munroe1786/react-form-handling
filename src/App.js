@@ -14,7 +14,7 @@ function App() {
     const value = e.target.type === "checkbox" ? e.target.checked : e.target.value
     setState({
       ...state,
-      [e.target.name]: e.target.value,
+      [e.target.name]: value,
   })
 }
 
